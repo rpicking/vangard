@@ -1,0 +1,11 @@
+obj/
+vangard/__pycache__/
+app/
+web.debug.config
+web.config
+main/__pycache__/
+main/migrations/__pycache__/
+bin/
+readme.mht
+static/
+vangard.pyproj

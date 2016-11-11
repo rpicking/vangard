@@ -1,0 +1,414 @@
+{% extends "main/header.html" %}
+{% block content %}
+    <!-- Header Section -->
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container-fluid jumbo" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('static/main/img/1.jpg');">
+                        <div class="intro-text">
+                            <h1>Your movies, your way.</h1>
+                            <p>Watch, request and chat about your favorite movies and TV shows with friends and family.</p>
+                            <a href="#intro-section" class="page-scroll btn btn-xl">Tell Me More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid jumbo" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('static/main/img/2.jpg');">
+                        <div class="intro-text">
+                            <h1>New media at the drop of a hat.</h1>
+                            <p>Easily add old and upcoming movies and episodes as soon as they are available.</p>
+                            <a href="#request-section" class="page-scroll btn btn-xl">Tell Me More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid jumbo" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('static/main/img/3.jpg');">
+                        <div class="intro-text">
+                            <h1>Never miss an episode!</h1>
+                            <p>Stay on top show airdates with our new calendar feature.</p>
+                            <a href="#calendar-section" class="page-scroll btn btn-xl">Tell Me More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid jumbo" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('static/main/img/4.jpg');">
+                        <div class="intro-text">
+                            <h1>Introducing Slack Notifications</h1>
+                            <p>With our new notification system, you will never be left wondering if an item has been added to the library.</p>
+                            <a href="#notifications-section" class="page-scroll btn btn-xl">Tell Me More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Intro Section -->
+    <section id="intro-section" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container well">
+                        <h2 class="section-title text">What is Vangard?</h2>
+                        <h4>Vangard is your own personal netflix.  Combining multiple services like requesting new media, calendared air dates, and notifications when new movies and shows are added, 
+                        Vangard sets out to give you a simple, easy to use entertainment experience. Now that you're here, lets jump right in.</h4>
+                        <h2>Status</h2>
+                        <p>To check the status of a service, look for the colored status indicator.</p>
+                        <p><strong>For Example:</strong></p>
+                        <div id="indicator-ex" class="row">
+                            <div class="col-md-6 centered">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="pull-right" src="static/main/img/green_indicator.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="pull-left text-justify"><i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>Up and running, everything is working as expected. Movies and TV Shows are all streamable.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="pull-right" src="static/main/img/yellow_indicator.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="pull-left text-justify"><i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>Service works but minor issues like slow speeds, few items missing, etc.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="pull-right" src="static/main/img/red_indicator.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="pull-left text-justify"><i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>Service is down completely, missing significant amounts of data or plex server has no internet access.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>To report an issue with a service that shows a green indicator, simply navigate to the options menu and fill out the report form.</h4>
+                    </div>
+                    <!-- Latest Features -->
+                    <div id="features-section" class="container well">
+                        <h2>Latest Features</h2>
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6 feature">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/plex.png" alt="">
+                                    <div class="caption">
+                                        <h3>Plex</h3>
+                                        <p>Stream your favorite movies, tv shows and sports from the comfort of your home.</p>
+                                        <p>
+                                            <a href="https://app.plex.tv/web/app" target="_blank" class="btn btn-primary">Start Plex</a> <a href="#plex-section" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 feature">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/plexrequests.png" alt="">
+                                    <div class="caption">
+                                        <h3>Request</h3>
+                                        <p>Adding new movies and shows has never been easier. All done at the click of a button.</p>
+                                        <p>
+                                            <a href="http://vangardmk.noip.me/request" target="_blank" class="btn btn-primary">Make Request</a> <a href="#request-section" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 feature">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/calendar.png" alt="">
+                                    <div class="caption">
+                                        <h3>Calendar</h3>
+                                        <p>Want to see episode air dates in an easy to use format? Simply add our calendar or view it here.</p>
+                                        <p>
+                                            <a href="#calendar-section" class="btn btn-primary page-scroll">View Calendar</a> <a href="#calendar-section" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 feature">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/slack.png" alt="">
+                                    <div class="caption">
+                                        <h3>Notifications</h3>
+                                        <p>Get notifications on newly added movies and tv shows. Join the slack group and you're ready to go.</p>
+                                        <p>
+                                            <a href="vangardnetwork.slack.com" class="btn btn-primary">Launch Slack</a> <a href="#notifications-section" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Upcoming Features -->
+                    <div class="container well">
+                        <h2>Upcoming Features <a href="#upcoming-section" class="page-scroll btn btn-default">see all</a></h2>
+                        <div id="upcoming" class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/sync.png" alt="Plex Sync">
+                                    <div class="caption">
+                                        <h3>Plex Sync</h3>
+                                        <p>Sync movies and tv shows for offline viewing.</p>
+                                        <p><strong>ETA: 1-2 weeks</strong></p>
+                                        <p>
+                                            <a href="#plex-sync" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/cloud.png" alt="Plex Cloud">
+                                    <div class="caption">
+                                        <h3>Plex in the Cloud</h3>
+                                        <p>Watch plex anytime 24/7. No buffering, no downtime, no problem.</p>
+                                        <p><strong>ETA: 1-3 months</strong></p>
+                                        <p>
+                                            <a href="#plex-cloud" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/webcalendar.png" alt="Web Calendar">
+                                    <div class="caption">
+                                        <h3>Web Calendar</h3>
+                                        <p>Air dates, release dates and more all on our easy to use web calendar.</p>
+                                        <p><strong>ETA: 1-2 months</strong></p>
+                                        <p>
+                                            <a href="#web-calendar" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                    <img src="static/main/img/notifications.png" alt="Personal Notification">
+                                    <div class="caption">
+                                        <h3>Personalized Notifications</h3>
+                                        <p>Receive emails or slack notifications for specific shows or categories that you want.</p>
+                                        <p><strong>ETA: 3+ months</strong></p>
+                                        <p>
+                                            <a href="#personal-notifications" class="page-scroll btn btn-default">More Info</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Plex Section -->
+    <section id="plex-section" class="">
+        <div class="container">
+            <div class="row well">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Plex</h2>
+                    <div class="row">
+                        <div class="col-sm-6 centered">
+                            <span class="pop">
+                                <img src="static/main/img/plex-screen.png" alt='Plex Movie Layout'>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 text-justify">
+                            <h3><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>Overview</h3>
+                            <p>Watch all of you favorite shows and movies in stunning HD right from the comfort of your home. Wih the upcoming Vangard Plex Cloud Server, watch your shows anywhere without buffering or slowdowns.</p>
+                            <h3><i class="fa fa-ticket fa-fw" aria-hidden="true"></i>Running Plex</h3>
+                            <p>To start using plex, simply click the start plex button below, login with your plex.tv account information and begin watching.
+                                <br>To check the status of plex look for the green dot up at the top.</p>
+                            <a href="https://app.plex.tv/web/app" target="_blank" class="page-scroll btn btn-xl">Start Plex</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Request Section -->
+    <section id="request-section" class="">
+        <div class="container">
+            <div class="row well">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Requests</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="pop">
+                                <img src="static/main/img/request-screen.png" alt='Request Movie'>
+                            </span>
+                            <span class="pop">
+                                <img src="static/main/img/request2-screen.png" alt='Request TV Show'>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 text-justify">
+                            <h3><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>Overview</h3>
+                            <p>Finally an easy to use solution for requesting new movies and tv shows. Gone are the days of texting or having to call to get a new show added. With this easy to use system, simply login with your plex username and password and your ready to go</p>
+                            <h3><i class="fa fa-video-camera fa-fw" aria-hidden="true"></i>Movies</h3>
+                            <p>To request a new movie, simply search for the movie in question, and click request. Depending on your status, a request may be auto-approved, or require approval from an admin before being added which may take additional time.</p>
+                            <h3><i class="fa fa-television fa-fw" aria-hidden="true"></i>TV Shows</h3>
+                            <p>Requesting a tv show is much like requesting a movie. The only difference being you have the option to select which season(s) you wish to add. Adding the latest or all season(s) will enable all subsequent episodes to be added automatically.</p>
+                            <a href="http://vangardmk.noip.me/request" target="_blank" class="page-scroll btn btn-xl">Make Request</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Calendar Section -->
+    <section id="calendar-section" class="">
+        <div class="container">
+            <div class="row well">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Calendar</h2>
+                    <h3>Web calendar coming soon!</h3>
+                    <span class="pop">
+                            <img src="static/main/img/calendar-example.png" alt="Example look for web calendar">
+                    </span>
+                    <h4>To add the calendar to gmail, icloud, etc. add the address below as an external calendar.</h4>
+                    <div class="col-md-6 centered">
+                        <div class="input-group">
+                            <input class="form-control" type="text" value="http://vangardmk.noip.me/calendar" id="copy-calendar">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default copy-btn" data-toggle="tooltip" title="Copy to Clipboard" data-clipboard-target="#copy-calendar">
+                                    <i class="fa fa-clipboard fa-fw" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <p>More instructions for adding to <a href="https://support.google.com/calendar/answer/37100" target="_blank">gmail</a> and <a href="https://support.apple.com/en-us/HT202361" target="_blank">icloud</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Notifications Section -->
+    <section id="notifications-section" class="">
+        <div class="container">
+            <div class="row well">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Notifications</h2>
+                    <div class="col-sm-6 centered">
+                        <span class="pop">
+                            <img src="static/main/img/slackdevices.png">
+                        </span>
+                        <span class="pop">
+                            <img src="static/main/img/slack-screen.jpg">
+                        </span>
+                    </div>
+                    <div class="col-sm-6 text-justify">
+                        <h3><i class="fa fa-chevron-right fa-fw" aria-hidden="true"></i>Overview</h3>
+                        <p>One of the best things about using the slack chat/notifications is not only are you able to get notifications on newly added movies and TV shows, you can do it all on your favorite devices.</p>
+                        <p>On the <i class="fa fa-desktop fa-lg fa-fw" aria-hidden="true"></i>computer or <i class="fa fa-mobile fa-2x" aria-hidden="true"></i> phone you can use the slack app to view notifications or chat with other members of the Vangard Network.</p>
+                        <p>Don't want to be tied down to an app? Head over to <a href="vangardnetwork.slack.com" target="_blank">vangardnetwork.slack.com</a> and login to stay up to date whenever and wherever you want.</p>
+                        <p>Because all of these devices are linked with your account, you can change sounds, notification timing, etc. from any device and it will sync to all of them.</p>
+                        <h3><i class="fa fa-comments fa-fw" aria-hidden="true"></i>Channels</h3>
+                        <p>The Vangard Network slack team has multiple channels to better organize notifications by media type.</p>
+                        <ul>
+                            <li>#general - General chat for random discussion and announcements</li>
+                            <li>#plex - Uptime/down of the plex server</li>
+                            <li>#movies - Movies added to the plex library</li>
+                            <li>#tvshows - Episodes added to the plex library</li>
+                        </ul>
+                        <p>An issue that some of you might have noticed with the current notification system for tv shows is that when whole seasons are added you get spammed with a ton of notifications all at once.
+                        I don't have an immediate fix but do plan on fixing it in the somewhat near future</p>
+                        <a href="http://vangardnetwork.slack.com" target="_blank" class="page-scroll btn btn-xl">Go to Slack</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Upcoming Section -->
+    <section id="upcoming-section" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Upcoming Features</h2>
+                </div>
+                <div id="plex-sync" class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="static/main/img/sync.png" alt="Plex Sync">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Plex Sync</h3>
+                        <p>Using plex's built in sync features, you will be able to select movies, tv shows or sports to download and be able to view offline.  Because this feature relies heavily on my home server
+                        bandwidth, this will have a limited release, most likely in the form of limited download speeds, or item counts.  After the Vangard Plex Cloud server is online and operational, the limits will
+                        be removed and you will be able to fully enjoy the feature.</p>
+                        <p><strong>ETA: 1-2 weeks for limited access.<br>Full access after Plex Cloud</strong></p>
+                    </div>
+                </div>
+                <div id="plex-cloud" class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="static/main/img/cloud.png" alt="Plex Cloud">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Plex in the Cloud</h3>
+                        <p>While the process has already been started, which you may have noticed with more buffering in plex than usual, this process will take anywhere from 1 to 3 months to upload everything to
+                        the cloud.  When its done you can expect to rarely, if at all, see any buffering or slowdowns and will be able to stream anywhere anytime to your hearts content.  I will be experimenting
+                        with this feature for a few months after it is launched, but because it is not free for me to operate this, I may choose to end it depending on cost, usage, etc.  For now, you can assume
+                        that I will be running this feature indefinitely unless the costs become too much to bear.</p>
+                        <p><strong>ETA: 1-3 months, highly dependent on time it takes to upload all media to cloud</strong></p>
+                    </div>
+                </div>
+                <div id="web-calendar" class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="static/main/img/webcalendar.png" alt="Web Calendar">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Web Calendar</h3>
+                        <p>While there is already an external calendar that can be used in gmail, icloud, etc. sometimes you just want to quickly check the air date of an episode. The web calendar will show
+                        all of the air dates for shows that have been added from requests, or are currently in plex and thus being tracked. A potential additional feature of this would include adding upcoming movie
+                        release date in theaters, or the release of the blu-ray for a requested movie.</p>
+                        <p><strong>ETA: 1-2 months, depending on additional features added.</strong></p>
+                    </div>
+                </div>
+                <div id="personal-notifications" class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="static/main/img/notifications.png" alt="Personal Notification">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Personal Notifications</h3>
+                        <p>While having the current notification system is great, it can get tiresome to get spammed with notifications that you might not have any interest in.  The new notification system 
+                        will allow you to select which shows or movies that you want notifications for.  Whether that is only movies and shows that you requested, or subscribing to notifications for certain shows
+                        or even all of them.  The way in which multiple similar notifications will be announced will also change.</p>
+                        <p>For example, instead of receiving a separate notification for each episode
+                        when an entire season or show is added, you will see on saying the over added status. (Season 1 added, Episodes 1,2,3,4 of Season 2 added).</p>
+                        <p><strong>ETA: 3+ months, because this requires a complete rewrite, other upcoming features will be prioritized.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+                </div>
+                <div id="modal-body" class="modal-body">
+                    <img src="" id="imagepreview">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
