@@ -9,3 +9,6 @@ bin/
 readme.mht
 static/
 vangard.pyproj
+db.sqlite3
+main/management/commands/__pycache__/
+main/migrations/
